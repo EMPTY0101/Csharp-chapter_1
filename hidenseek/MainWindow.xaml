@@ -1,0 +1,42 @@
+﻿<Window x:Class="hidenseek.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hidenseek"
+        mc:Ignorable="d"
+        Title="Find all of the matching animals" Height="450" Width="400">
+    <Grid x:Name="mainGrid" Margin="-2,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="105*"/>
+            <ColumnDefinition Width="105*"/>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="92*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="84*"/>
+            <RowDefinition Height="85*"/>
+            <RowDefinition Height="105*"/>
+            <RowDefinition Height="74*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="TextBlock" HorizontalAlignment="Center" Text="?" Grid.Column="1" Grid.Row="1" FontSize="36" Width="49" VerticalAlignment="Center" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Center" Text="?" Grid.Column="1" FontSize="36" Width="49" VerticalAlignment="Center" Margin="28,13,28,10" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy1" HorizontalAlignment="Center" Text="?" Grid.Row="1" FontSize="36" Width="49" VerticalAlignment="Center" Margin="27,18,29,18" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy2" HorizontalAlignment="Center" Text="?" FontSize="36" Width="49" VerticalAlignment="Center" Margin="27,13,29,10" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy3" HorizontalAlignment="Center" Text="?" Grid.Column="2" FontSize="36" Width="48" VerticalAlignment="Center" Margin="20,13,22,10" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy4" HorizontalAlignment="Center" Text="?" Grid.Column="2" Grid.Row="1" FontSize="36" Width="49" VerticalAlignment="Center" Margin="18,20,23,17" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy5" HorizontalAlignment="Center" Text="?" Grid.Column="1" Grid.Row="2" FontSize="36" Width="49" VerticalAlignment="Center" Margin="28,27,28,10" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy6" HorizontalAlignment="Center" Text="?" Grid.Row="2" FontSize="36" Width="49" VerticalAlignment="Center" Margin="27,27,29,10" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy7" HorizontalAlignment="Center" Text="?" Grid.Column="2" Grid.Row="2" FontSize="36" Width="48" VerticalAlignment="Center" Margin="20,20,22,18" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy8" HorizontalAlignment="Center" Text="?" Grid.Column="3" Grid.Row="1" FontSize="36" Width="49" VerticalAlignment="Center" Margin="19,17,24,20" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy9" HorizontalAlignment="Center" Text="?" Grid.Column="3" FontSize="36" Width="49" VerticalAlignment="Center" Margin="19,13,24,10" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy10" HorizontalAlignment="Center" Text="?" Grid.Column="3" Grid.Row="2" FontSize="36" Width="50" VerticalAlignment="Center" Margin="20,17,22,20" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy11" HorizontalAlignment="Center" Text="?" Grid.Row="3" FontSize="36" Width="49" VerticalAlignment="Center" Margin="25,29,31,28" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy12" HorizontalAlignment="Center" Text="?" Grid.Column="1" Grid.Row="3" FontSize="36" Width="49" VerticalAlignment="Center" Margin="31,30,25,27" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy13" HorizontalAlignment="Center" Text="?" Grid.Column="2" Grid.Row="3" FontSize="36" Width="49" VerticalAlignment="Center" Margin="19,26,22,31" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="TextBlock_Copy14" HorizontalAlignment="Center" Text="?" Grid.Column="3" Grid.Row="3" FontSize="36" Width="50" VerticalAlignment="Center" Margin="20,29,22,28" MouseDown="TextBlock_MouseDown"/>
+        <TextBlock x:Name="timeTextBlock" HorizontalAlignment="Center" Text="Elapsed time" Grid.Row="4" FontSize="36" Width="390" VerticalAlignment="Center" Grid.ColumnSpan="4" TextAlignment="Center" Margin="0,13,2,13" MouseDown="timeTextBlock_MouseDown"/>
+    </Grid>
+</Window>
